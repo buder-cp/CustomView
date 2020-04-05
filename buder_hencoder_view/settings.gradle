@@ -1,0 +1,2 @@
+include ':app', ':drawing'
+rootProject.name='buder_hencoder_view'
