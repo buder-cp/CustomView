@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.test.drawing.view.AvatarView
+    <com.test.drawing.view.ImageTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
