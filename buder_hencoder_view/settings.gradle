@@ -1,2 +1,2 @@
-include ':app', ':drawing'
+include ':app', ':drawing', ':animation'
 rootProject.name='buder_hencoder_view'
