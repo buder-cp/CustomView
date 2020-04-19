@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':cp5_pathmeasure'
 rootProject.name='customview'
