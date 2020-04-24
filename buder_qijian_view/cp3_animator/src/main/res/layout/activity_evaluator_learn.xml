@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.test.cp3_animator.FallingBallImageView
+        android:id="@+id/ball_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cicle" />
+
+    <Button
+        android:id="@+id/ValueAnimatorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ValueAnimator"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/ObjectAnimatorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ValueAnimatorBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="ObjectAnimatorBtn"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/charID"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="40sp" />
+
+</RelativeLayout>
