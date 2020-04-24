@@ -1,0 +1,2 @@
+include ':app', ':buderdn18'
+rootProject.name='buder_dn_view'
