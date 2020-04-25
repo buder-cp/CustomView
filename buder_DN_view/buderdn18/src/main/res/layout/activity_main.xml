@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.test.buderdn18.MenuDrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--内容  区域-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/fake" />
+        <!--侧滑区域  LinearLayout    ColorDrawable -->
+        <com.test.buderdn18.MenuContentLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimaryDark"
+            app:maxTranslationX="40dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                style="@style/MenuText"
+                android:layout_marginTop="80dp"
+                android:drawableLeft="@mipmap/circle"
+                android:text="朋友圈" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/wallet"
+                android:text="钱包" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/coupon"
+                android:text="优惠券" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/coupon"
+                android:text="优惠券" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/coupon"
+                android:text="优惠券" />
+        </com.test.buderdn18.MenuContentLayout>
+
+
+    </com.test.buderdn18.MenuDrawerLayout>
+
+</RelativeLayout>
