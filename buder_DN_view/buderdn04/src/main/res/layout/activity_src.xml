@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/rounddstinbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="圆角" />
+
+            <Button
+                android:id="@+id/NormalGestureTrackViewbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="普通画板" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/BezierGestureTrackViewbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="贝塞尔画板" />
+
+            <Button
+                android:id="@+id/eraserbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="橡皮擦" />
+        </TableRow>
+
+    </TableLayout>
+
+    <com.test.buderdn04.RoundImageView_SRCIN
+        android:id="@+id/roundimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.test.buderdn04.NormalGestureTrackView
+        android:id="@+id/NormalGestureTrackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.test.buderdn04.BezierGestureTrackView
+        android:id="@+id/BezierGestureTrackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.test.buderdn04.EraserView_SRCOUT
+        android:id="@+id/EraserView_SRCOUTView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>
