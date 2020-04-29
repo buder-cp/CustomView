@@ -43,6 +43,22 @@ public class SrcActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.GuaGuaCardViewbtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hideAllViews();
+                findViewById(R.id.GuaGuaCardView_SRCOUT).setVisibility(View.VISIBLE);
+            }
+        });
+
+        findViewById(R.id.StripMeiZibtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hideAllViews();
+                findViewById(R.id.StripMeiZi).setVisibility(View.VISIBLE);
+            }
+        });
+
     }
 
     private void hideAllViews() {
@@ -51,6 +67,8 @@ public class SrcActivity extends AppCompatActivity {
         findViewById(R.id.NormalGestureTrackView).setVisibility(View.GONE);
         findViewById(R.id.BezierGestureTrackView).setVisibility(View.GONE);
         findViewById(R.id.EraserView_SRCOUTView).setVisibility(View.GONE);
+        findViewById(R.id.GuaGuaCardView_SRCOUT).setVisibility(View.GONE);
+        findViewById(R.id.StripMeiZi).setVisibility(View.GONE);
 
     }
 }

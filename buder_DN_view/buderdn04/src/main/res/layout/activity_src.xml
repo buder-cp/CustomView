@@ -43,6 +43,23 @@
                 android:text="橡皮擦" />
         </TableRow>
 
+        <TableRow>
+
+            <Button
+                android:id="@+id/GuaGuaCardViewbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="刮奖品" />
+
+            <Button
+                android:id="@+id/StripMeiZibtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="刮妹子" />
+        </TableRow>
+
     </TableLayout>
 
     <com.test.buderdn04.RoundImageView_SRCIN
@@ -65,6 +82,18 @@
 
     <com.test.buderdn04.EraserView_SRCOUT
         android:id="@+id/EraserView_SRCOUTView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.test.buderdn04.GuaGuaCardView_SRCOUT
+        android:id="@+id/GuaGuaCardView_SRCOUT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.test.buderdn04.StripMeiZi
+        android:id="@+id/StripMeiZi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
