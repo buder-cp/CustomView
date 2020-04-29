@@ -1,2 +1,2 @@
-include ':app', ':buderdn18', ':buderdn12', ':buderdn03', ':buderdn04'
+include ':app', ':buderdn18', ':buderdn12', ':buderdn03', ':buderdn04', ':buderdn05', ':buderdn06', ':buderdn07', ':buderdn08'
 rootProject.name='buder_dn_view'
