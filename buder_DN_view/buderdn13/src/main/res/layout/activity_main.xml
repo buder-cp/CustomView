@@ -1,18 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.test.buderdn13.AnimatorScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.test.buderdn13.AnimatorLinerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#007788"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="带上您的行李箱，准备shopping！"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            discrollve:discrollve_alpha="true" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_gravity="top|right"
+            android:src="@mipmap/baggage"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft|fromBottom" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="准备好相机，这里有你想象不到的惊喜！"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            discrollve:discrollve_fromBgColor="#ffff00"
+            discrollve:discrollve_toBgColor="#88EE66" />
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="110dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/camera"
+            discrollve:discrollve_translation="fromRight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D97C1F"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="这次淘宝造物节真的来了，我们都在造，你造吗？\n
+							7月22日-7月24日\n
+							上海世博展览馆\n
+							在现场，我们造什么？"
+            android:textSize="23sp"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromBottom" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@mipmap/sweet"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@mipmap/shoes"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromLeft|fromBottom" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@mipmap/shoes"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromRight|fromTop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@mipmap/sweet"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromLeft" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@mipmap/camera"
+            discrollve:discrollve_scaleY="true"
+            discrollve:discrollve_translation="fromLeft" />
+
+    </com.test.buderdn13.AnimatorLinerLayout>
+
+</com.test.buderdn13.AnimatorScrollView>
